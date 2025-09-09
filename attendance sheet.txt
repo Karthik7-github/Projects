@@ -1,0 +1,8 @@
+attendance sheet 
+Method | URL | Body
+POST | http://localhost:3000/signup | username, email, password, pa
+GET | http://localhost:3000/users | None
+PUT | http://localhost:3000/update/:id | username, email, password, pa
+DELETE | http://localhost:3000/delete/:id | Nones
+
+https://notegpt.io/workspace/ppts
