@@ -1,0 +1,356 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  transition: 0.5s ease-in-out;
+}
+
+header .navbar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  background-color: #fffcf2;
+  opacity: 1;
+  border: 1px solid black;
+  z-index: 0;
+  background-color:rgb(11, 16, 0);
+  color: #ff2bd1;
+}
+
+header .links {
+  width: 60%;
+  /* border: 2px solid black; */
+  justify-content: space-evenly;
+  align-items: center;
+  display: flex;
+}
+
+header .links a {
+  text-decoration: none;
+  padding: 4px;
+  color: rgb(254, 3, 158);
+  font-weight: 500;
+  font-size: 12px;
+  transition: 0.2s ease;
+}
+
+header .links a:hover {
+  font-size: 15px;
+  box-shadow: 0px 3px 0px ;
+}
+
+header .mode button {
+  padding: 6px;
+  border-radius: 5px;
+}
+
+header:hover {
+  box-shadow: 0 6px 99px rgb(255, 38, 0);
+}
+
+.Mainpage {
+  height: 100vh;
+  background-color: #bd00ff;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.container {
+  background-color: #403d39;
+  color: #ccc5b9;
+  padding: 20px 40px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 2px 3px 2px black;
+  transition: 0.5s ease-in;
+}
+
+.container:hover {
+  color: rgb(250, 248, 250);
+  background-color: rgb(244, 2, 244);
+  box-shadow: 40px 5px 100px rgb(244, 2, 244);
+  border-radius: 100px;
+}
+
+.Mainpage a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+
+.Mainpage .downbox{
+  /* width: 80%;
+  height: 40vh;
+  background-color: black;
+  transition: 1s ease;  */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease,opacity 0.4s ease;
+}
+
+.Mainpage .downbox.active{
+  max-height: 500px;
+  opacity: 1;
+}
+
+.Mainpage button{
+  border-radius: 70px;
+  border: none;
+  /* transition: 1s ease; */
+}
+
+.Mainpage button:hover{
+  /* transform: translateY(20px); */
+}
+
+
+/* Section section*/
+
+.skills-section {
+  height: 100vh;
+  width: 100%;
+  background-color: #d600ff;
+  padding: 20px;
+  align-items: center;
+}
+
+.skills-section .heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 65px;
+}
+
+.skills-section .boxes-bar1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.skills-section .boxes-bar1 .box {
+  width: 20%;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  margin: 20px 10px;
+  transition: 0.3s ease-in;
+  border-radius: 50px;
+}
+
+.skills-section .boxes-bar1 .box:hover {
+  color: white;
+  width: 22%;
+  height: 32vh;
+  background-color:#df2aa0 ;
+  border-radius: 20px;
+  box-shadow: 2px 5px 100px rgb(255, 196, 0);
+}
+
+a{
+  color: black;
+}
+
+ i{
+  font-size: 100px;   
+  transition: 1s ease;    
+}
+
+i:hover{
+  color:white;
+}
+
+/* Projects */
+.Projects {
+  height: 100vh;
+  width: 100%;
+  background-color: #9000ff;
+  padding: 20px;
+  align-items: center;
+}
+
+.Projects .heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 65px;
+}
+
+.Projects .contentbox {
+  width: 70vh;
+  height: 70vh;
+  background-color: #ccc5b9;
+  border-radius: 20px;
+  margin: 10px;
+  text-align: center;
+  border: 2px solid brown;
+  transition: 0.5s ease-in;
+}
+
+.Projects .contentbox:hover {
+  border: 2px solid black;
+  border-radius: 20px;
+  margin-top: 10px;
+  box-shadow: 2px 2px 22px black;
+}
+
+.Projects .contentbox ul {
+  line-height: 45px;
+  list-style: none;
+  position: absolute;
+  text-align: center;
+}
+
+/* Acheivmenst */
+.Achievments {
+  height: 290vh;
+  width: 100%;
+  background-color:rgb(0, 0, 0);
+  padding: 20px;
+  align-items: center;
+}
+
+.Achievments .heading {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  color: yellow;
+  padding-top: 65px;
+}
+
+.Achievments .img-boxes1{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.Achievments .achbox{
+  height: 40vh;
+  background-color: yellow;
+  margin: 50px;
+  width: 30%;
+  transition: 0.4s ease;
+}
+
+.Achievments .achbox:hover{
+  width: 60%;
+  height: 60vh;
+  box-shadow: 10px 10px 99px rgb(255, 3, 238);
+}
+
+.Achievments .bigcontainer:hover{
+  box-shadow:12px 20px 200px rgb(255, 0, 238);
+}
+
+.Achievments .img-boxes2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Achievments .bigcontainer{
+  width: 70vh;
+  height: 90vh;
+  transition: 0.5s ease;
+}
+
+.Achievments .bigcontainer:hover{
+  width: 80vh;
+  height:110vh;
+}
+
+/* Contact Section */
+
+
+.contact-section{
+  padding: 50px 0 100px;
+  background-color: lightcyan;
+  
+}
+
+.contact-section .section-title{
+  text-align: center;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.contact-section .section-content{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  gap: 48px;
+}
+
+.contact-section .contact-info-list .contact-info{
+  display: flex;
+  gap: 20px; 
+  margin: 20px 0;
+  align-items: center;
+}
+
+.contact-section .contact-info-list .contact-info i{
+  font-size: 12px;
+}
+
+.contact-section .contact-form .form-input{
+  width: 100%;
+  height: 50px;
+  padding: 0 12px;
+  outline: none;
+  margin-bottom: 16px;
+  background: whitesmoke;
+  border-radius: 10px;
+  border: 2px solid brown;
+}
+
+.contact-section .contact-form .form-input:focus{
+  border-color: black;
+}
+
+.contact-section .contact-form textarea.form-input{
+  height: 100px;
+  padding: 12px;
+  resize: vertical;
+}
+
+.contact-section .contact-form{
+max-width: 50%;
+}
+
+.contact-section .contact-form .submit-button {
+  padding: 12px 20px;
+  color: black;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.5s ease; /* ✅ smooth hover effect */
+}
+
+.contact-section .contact-form .submit-button:hover {
+  background-color: wheat;
+  border: 2px solid brown;
+  color: brown;
+}
