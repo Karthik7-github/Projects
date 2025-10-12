@@ -60,64 +60,102 @@ header:hover {
   box-shadow: 0 6px 99px rgb(255, 38, 0);
 }
 
+/* Home page */
+
 .Mainpage {
   height: 100vh;
-  background-color: #bd00ff;
+  background-color: #e9ff70;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   flex-direction: column;
 }
 
-.container {
-  background-color: #403d39;
-  color: #ccc5b9;
-  padding: 20px 40px;
-  border-radius: 10px;
-  text-align: center;
-  font-size: 20px;
-  font-weight: bold;
-  box-shadow: 2px 3px 2px black;
-  transition: 0.5s ease-in;
-}
-
-.container:hover {
-  color: rgb(250, 248, 250);
-  background-color: rgb(244, 2, 244);
-  box-shadow: 40px 5px 100px rgb(244, 2, 244);
-  border-radius: 100px;
-}
-
-.Mainpage a {
-  text-decoration: none;
+.Mainpage .about-container{
+  width: 95%;
+  height: 80vh;
+  margin-top: 40px;
+  /* background-color: black; */
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
 }
 
-.Mainpage .downbox {
-  /* width: 80%;
-  height: 40vh;
-  background-color: black;
-  transition: 1s ease;  */
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease, opacity 0.4s ease;
+.Mainpage .about-container .about{
+  width: 30%;
+  height: 70vh;
+  /* background-color:red; */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.Mainpage .downbox.active {
-  max-height: 500px;
-  opacity: 1;
+.Mainpage .about-container .about .pic{
+  width: 100%;
+  height: 50vh;
+  /* background-color: orange; */
 }
 
-.Mainpage button {
-  border-radius: 70px;
-  border: none;
-  /* transition: 1s ease; */
+.Mainpage .about-container .about .pic img{
+  border-radius:100px;
 }
 
-.Mainpage button:hover {
-  /* transform: translateY(20px); */
+.Mainpage .about-container .about .text-links{
+  width: 90%;
+  height: 20vh;
+  /* background-color:white; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding:10px;
+  align-items: center;
 }
+
+.Mainpage .about-container .about-para{
+  width: 50%;
+  height: 65vh;
+  /* background-color: pink; */
+  text-align: center;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-weight: 500;
+  text-shadow:1px 1px 1px #ffff;
+}
+
+.Mainpage .about-container .about .text-links .social-links{
+  width: 60vh;
+  height: 8vh;
+  background-color: rgb(50, 47, 47);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+  transition: 0.5s ease;
+  border-radius: 10px;
+}
+
+.Mainpage .about-container .about .text-links .social-links:hover{
+  /* background-color: rgb(50, 47, 47); */
+  color: white;
+  width: 65vh;
+  box-shadow: 1px 1px 50px black;
+}
+
+
+
+.Mainpage .about-container .about .text-links .social-links i{
+  font-size: 30px;
+  color:white;
+  border-radius: 100px;
+  transition: 0.2s ease-in;
+}
+
+.Mainpage .about-container .about .text-links .social-links i:hover{
+  font-size: 35px;
+  color: #e9ff70;
+}
+
 
 /* Section section*/
 
@@ -246,51 +284,24 @@ i:hover {
 .Projects {
   height: 100vh;
   width: 100%;
-  background-color: #9000ff;
-  padding: 20px;
-  align-items: center;
-}
-
-.Projects .heading {
+  background-color: #00f5d4;
   display: flex;
   justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding-top: 65px;
-  text-shadow: 0 0 10px #ff007f, 0 0 20px #ff007f;
 }
 
-.Projects .contentbox {
-  width: 70vh;
-  height: 70vh;
-  background-color: #ccc5b9;
-  border-radius: 20px;
-  margin: 10px;
-  text-align: center;
-  border: 2px solid brown;
-  transition: 0.5s ease-in;
+.Projects h1{
+  margin-top: 65px;
 }
 
-.Projects .contentbox:hover {
-  border: 2px solid black;
-  border-radius: 20px;
-  margin-top: 10px;
-  box-shadow: 2px 2px 22px black;
-}
 
-.Projects .contentbox ul {
-  line-height: 45px;
-  list-style: none;
-  position: absolute;
-  text-align: center;
-}
+
 
 /* Acheivmenst */
 
 .Achievments {
   height: 145vh;
   width: 100%;
-  background-color: rgb(0, 0, 0);
+  background-color: #f95738;
   padding: 20px;
   transition: height 0.6s ease;
 }
@@ -392,7 +403,7 @@ i:hover {
 /* Education section */
 
 .Education {
-  background-color: #ff86c2;
+  background-color: #ff0080;
   text-shadow: 0 0 10px #ff007f, 0 0 20px #ff007f;
   height: 100vh;
 }
@@ -408,12 +419,42 @@ i:hover {
 }
 
 .Education .edu-container{
-  width: 80%;
+  width: 100%;
   height: 70vh;
-  background-color: yellow;
-  margin-left: 110px;
+  
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
+.Education .blocks{
+  width: 15%;
+  height: 30vh;
+  border-radius: 10%;
+  background-color: red;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.Education .blocks:hover{
+  box-shadow: 1px 1px 20px black;
+  width: 20%;
+  height: 40vh;
+}
+
+.Education .edu-container .edu-content{
+  color: whitesmoke;
+  text-shadow: 1px 2px 100px black;
+  opacity: 1;
+  transition:0.2s ease;
+}
+
+
+
+
+img{
+  border-radius: 10%;
+}
 
 /* Contact Section */
 

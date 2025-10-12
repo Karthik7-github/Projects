@@ -50,6 +50,3 @@ allBoxes.forEach(item => {
     box.classList.remove('glow');
   });
 });
-
-
-
